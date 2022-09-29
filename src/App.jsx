@@ -15,7 +15,7 @@ function App() {
       <Carousel
         slides={slides}
         controls
-        // indicators
+        indicators
         width={'100%'}
         imageWidth={'100%'}
         imageHeight={600}
