@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Carousel from './carousel/Carousel';
+import Carousel from './components/Carousel';
 
 function App() {
   const slides = [
