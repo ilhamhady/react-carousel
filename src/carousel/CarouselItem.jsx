@@ -1,11 +1,17 @@
-const CarouselItem = ({ slide, stopSlide, startSlide }) => {
+const CarouselItem = ({
+  slide,
+  stopSlide,
+  startSlide,
+  imageWidth,
+  imageHeight,
+}) => {
   return (
     <div
       className='carousel-item'
       onMouseEnter={stopSlide}
       onMouseOut={startSlide}
     >
-      <img src={slide} />
+      <img width={imageWidth} height={imageHeight} src={slide} />
     </div>
   );
 };

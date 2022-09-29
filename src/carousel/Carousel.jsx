@@ -11,6 +11,8 @@ const Carousel = ({
   indicators = false,
   autoPlay = true,
   width = 1000,
+  imageWidth,
+  imageHeight,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideInterval = useRef();
@@ -67,6 +69,8 @@ const Carousel = ({
             key={index}
             stopSlide={stopSlideTimer}
             startSlide={startSlideTimer}
+            imageWidth={imageWidth}
+            imageHeight={imageHeight}
           />
         ))}
       </div>

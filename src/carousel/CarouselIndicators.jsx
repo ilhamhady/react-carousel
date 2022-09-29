@@ -1,4 +1,4 @@
-const CarouselIndicators = ({ slides, currentIndex, switchIndex }) => {
+const CarouselIndicators = ({ slides, currentIndex, switchIndex, dotsOn }) => {
   return (
     <div className='carousel-indicators'>
       {slides.map((_, index) => (
@@ -7,7 +7,7 @@ const CarouselIndicators = ({ slides, currentIndex, switchIndex }) => {
             currentIndex === index ? ' active' : ''
           }`}
           onClick={() => switchIndex(index)}
-        ></button>
+        />
       ))}
     </div>
   );

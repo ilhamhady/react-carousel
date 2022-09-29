@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.carousel-item img {
+  object-fit: cover;
+}
+
 .carousel-control {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -41,8 +45,8 @@
   z-index: 2;
 }
 .carousel-indicator-item {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: none;
   background: #fff;
   opacity: 0.5;
